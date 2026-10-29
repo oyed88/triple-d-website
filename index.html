@@ -217,9 +217,9 @@ footer p{margin:0 0 .4rem}
         <p><a class="btn" href="https://wa.me/2348105265581?text=Hello%20Triple%20D%2C%20I%20would%20like%20to%20join%20the%20group" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
         <p><small>Triple D Consult Group shares general nutrition education. It does not replace medical care. Please see a qualified health professional for medical concerns.</small></p>
       </div>
-      <form action="https://formsubmit.co/tripledconsultnigeria@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New message from Triple D website">
-        <input type="hidden" name="_template" value="table">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
         <div><label for="name">Your name</label><input id="name" name="name" required></div>
         <div><label for="email">Your email</label><input id="email" name="email" type="email" required></div>
         <div><label for="msg">How can we help?</label><textarea id="msg" name="message" required></textarea></div>
